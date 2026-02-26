@@ -1,0 +1,55 @@
+body{height: 3000px;
+  font-family: Playfair Display;
+background-color: #FAF5FF;}
+
+#main-title {color:#A881C9;
+text-align: left;}
+
+#headers {color:#D4A3FF;
+text-align: left;}
+
+#paragraphs{color:#D6ABFF;
+text-align: left;}
+
+.box {width: 10px; 
+height: 50px; 
+border: 2px solid #A881C9;
+padding: 15px;
+margin: 20px; 
+background-color: #F1E5FF;
+border-radius: 30px;
+position: fixed;
+bottom: 0;
+width: 7%;
+left: 1250px; 
+img{width: 100%; object-fit: contain;}}
+.box2 {width: 200px;
+height: 120px; 
+border: 10px dashed #A881C9; 
+padding: 1px; 
+margin: 20px;
+background-color: #F1E5FF; /* Adds a background color */
+border-radius: 5px; /* Rounds the corners */
+position: sticky;
+top: 0px;
+left: 900px;
+background: #F1E5FF;}
+.box3 {width: 450px; /* Sets the width of the box */
+height: 150px; /* Sets the height of the box */
+border: 5px solid #A881C9; /* Adds a solid border */
+padding: 7px; /* Adds space between content and border */
+margin: 20px; /* Adds space outside the border, separating it from other elements */
+      background-color: #F1E5FF; /* Adds a background color */
+  border-radius: 20px; /* Rounds the corners */
+ position: relative;
+  top: 10px; /* moves down */
+    left: 10px; /* moves right */}
+.box4 {width: 450px; /* Sets the width of the box */
+      height: 150px; /* Sets the height of the box */
+      border: 5px solid #A881C9; /* Adds a solid border */
+      padding: 7px; /* Adds space between content and border */
+      margin: 20px; /* Adds space outside the border, separating it from other elements */
+      background-color: #F1E5FF; /* Adds a background color */
+  border-radius: 20px; /* Rounds the corners */
+position: absolute;
+left: 100px; }
