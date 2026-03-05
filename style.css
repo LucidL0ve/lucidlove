@@ -1,55 +1,122 @@
-body{height: 3000px;
-  font-family: Playfair Display;
-background-color: #FAF5FF;}
+@import url(https://fonts.googleapis.com/css?family=Barrio);
+@import url(https://fonts.googleapis.com/css?family=Playpen-Sans-Thai);
 
-#main-title {color:#A881C9;
-text-align: left;}
+body{font-family: 'barrio' , serif;
+background-color: #17104C;
+height: 2000;}
 
-#headers {color:#D4A3FF;
-text-align: left;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+  
+  header {display: flex;
+  justify-content: space-between;
+        align-items: center;
+        background: #391779;
+        color: #FFF9DE;
+        padding: 1rem;
+   
+      }
+  header nav a {
+        color: #9EDDF6;
+        margin-left: 1rem;
+        text-decoration: none;
+      }
+.imageround{border-radius: 20px;}
 
-#paragraphs{color:#D6ABFF;
-text-align: left;}
-
-.box {width: 10px; 
-height: 50px; 
-border: 2px solid #A881C9;
-padding: 15px;
-margin: 20px; 
-background-color: #F1E5FF;
-border-radius: 30px;
-position: fixed;
-bottom: 0;
-width: 7%;
-left: 1250px; 
-img{width: 100%; object-fit: contain;}}
-.box2 {width: 200px;
-height: 120px; 
-border: 10px dashed #A881C9; 
-padding: 1px; 
+.box1 {width: 450px; 
+height: 300px;
+border: 5px solid #32ACD5; 
+padding: 7px; 
 margin: 20px;
-background-color: #F1E5FF; /* Adds a background color */
-border-radius: 5px; /* Rounds the corners */
-position: sticky;
-top: 0px;
-left: 900px;
-background: #F1E5FF;}
-.box3 {width: 450px; /* Sets the width of the box */
-height: 150px; /* Sets the height of the box */
-border: 5px solid #A881C9; /* Adds a solid border */
-padding: 7px; /* Adds space between content and border */
-margin: 20px; /* Adds space outside the border, separating it from other elements */
-      background-color: #F1E5FF; /* Adds a background color */
-  border-radius: 20px; /* Rounds the corners */
+      background-color: #891C79;
+  border-radius: 20px; 
  position: relative;
-  top: 10px; /* moves down */
-    left: 10px; /* moves right */}
-.box4 {width: 450px; /* Sets the width of the box */
-      height: 150px; /* Sets the height of the box */
-      border: 5px solid #A881C9; /* Adds a solid border */
-      padding: 7px; /* Adds space between content and border */
-      margin: 20px; /* Adds space outside the border, separating it from other elements */
-      background-color: #F1E5FF; /* Adds a background color */
-  border-radius: 20px; /* Rounds the corners */
-position: absolute;
-left: 100px; }
+  top: 380px; 
+    left: 455px; }
+
+@media (max-width: 768px){ 
+  .container {grid-template-areas: 
+"header"
+"main"
+"feature"
+"sidebar"
+"footer";
+    grid-template-columns: 1fr}}
+
+
+.container {
+  display: grid;
+  min-height:100vh;
+  grid-template-areas:
+    "header header header"
+    "sidebar main sidebar"
+    "sidebar main sidebar"
+    "footer footer footer";
+    grid-template-columns: 320px 1fr 320px;
+  grid-template-rows: 80px auto auto 60px;
+  gap: 20px;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+  background: #391779;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+aside {
+  grid-areas: sidebar;
+  background: #891C79;
+  border: 5px solid #32ACD5;
+  border-radius: 10px;
+  padding: 20px;
+height: 620px;}
+
+main{
+  grid-areas: main;
+  background: #6826D1;
+  border: 5px solid #EC807F;
+  border-radius: 10px;
+  padding: 20px; 
+height: 470px;}
+.feature{
+  grid-area: feature;
+  background: #D67040;
+  padding: 20px;
+}
+footer{
+  grid-area: footer;
+  background: #381877;
+  color: #F2B2B0;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.links{color: #DDF3FC;
+cursor: pointer;}
+
+#header1{color: #F2B2B0}
+#header2{color: #9EDDF6}
+
+#paragraph1{color: #DDF3FC;
+font-family: 'Playpen-Sans-Thai' , serif;}
+
+
+.box2 {width: 5px; 
+height: 5px; 
+padding: 7px; 
+margin: 20px;
+      background-color: #381877; 
+ position: relative;
+  top: 700px; 
+    left: 0px; }
